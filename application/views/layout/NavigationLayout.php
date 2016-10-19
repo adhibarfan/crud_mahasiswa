@@ -23,14 +23,14 @@
                         <li>
                             <a href="<?php echo base_url(); ?>index.php/admin/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
-                        
+
                         <li>
                             <a href="<?php echo base_url(); ?>index.php/admin/mahasiswa/"><i class="fa fa-table fa-fw"></i> Data Mahasiswa</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-edit fa-fw"></i> Data Buku</a>
                         </li>
-                        
+
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
