@@ -6,17 +6,8 @@
  * @Last Modified time: 2016-10-15 15:25:28
  */ -->
 
-    <!-- Bootstrap Core CSS -->
-    <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="<?php echo base_url(); ?>assets/css/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="<?php echo base_url(); ?>assets/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="<?php echo base_url(); ?>assets/css/morris.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="<?php echo base_url(); ?>assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/dataTables.bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/jquery.datetimepicker.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/sb-admin-2.css">
