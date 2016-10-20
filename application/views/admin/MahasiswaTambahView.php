@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>Dashboard - Admin></title>
+        <title>Dashboard - Admin</title>
 
-    <?php $this->load->view('layout/CssLayout'); ?>
+        <?php $this->load->view('layout/CssLayout'); ?>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-			<?php $this->load->view('layout/HeaderLayout.php'); ?>
+        <?php $this->load->view('layout/NavigationLayout') ?>
 
-            <?php $this->load->view('layout/navigationLayout'); ?>
-            <!-- /.navbar-static-side -->
-        </nav>
 
-        
         <div id="page-wrapper">
             <div class="row">
-            <p></p>
+                <p></p>
                 <ol class="breadcrumb">
                     <li><a href="<?php echo base_url(); ?>index.php/admin/">Home</a></li>
                     <li><a href="<?php echo base_url(); ?>index.php/admin/">Data Mahasiswa</a></li>
@@ -39,7 +35,7 @@
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-12">                   
+                <div class="col-lg-12">
 
                     <form method="post" action="<?php echo base_url(); ?>index.php/admin/Mahasiswa/simpanMahasiswa">
 
@@ -54,25 +50,25 @@
 
 
                         <div class="form-group">
-							<label for="jenis_kelamin">Jenis Kelamin</label>
-				<select type="text" name="jenis_kelamin" class="form-control">
-					<option value="pria">Pria</option>
-					<option value="wanita">Wanita</option>
-				</select>
-		</div>
+                            <label for="jenis_kelamin">Jenis Kelamin</label>
+                            <select type="text" name="jenis_kelamin" class="form-control">
+                                <option value="pria">Pria</option>
+                                <option value="wanita">Wanita</option>
+                            </select>
+                        </div>
 
                         <div class="form-group">
                             <label for="kelas">Kelas</label>
                             <input name="kelas" type="text" class="form-control" placeholder="masukkan kelas lahir anda" required>
-                        </div>                  
-                       
+                        </div>
+
                         <button type="submit" class="btn btn-primary">Simpan</button>
-                        <a href="<?php echo base_url(); ?>index.php/admin/AnggotaController/index">
+                        <a href="<?php echo base_url(); ?>index.php/admin/mahasiswa">
                             <button type="button" class="btn btn-warning">Batal</button>
                         </a>
                     </form>
                 </div>
             </div>
         </div>
-</body>
+    </body>
 </html>
