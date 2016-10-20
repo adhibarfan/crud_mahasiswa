@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>Dasboard - Admin</title>
+        <title>Dasboard - Admin</title>
 
-    <?php $this->load->view('layout/CssLayout'); ?>
+        <?php $this->load->view('layout/CssLayout'); ?>
 
-</head>
+    </head>
 
-<body>
-            <?php $this->load->view('layout/HeaderLayout.php'); ?>
+    <body>
 
-            <?php $this->load->view('layout/NavigationLayout'); ?>
-            
+        <?php $this->load->view('layout/NavigationLayout'); ?>
+
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
@@ -118,9 +117,9 @@
                     </div>
                 </div>
             </div>
-            </div>
-    <?php $this->load->view('layout/JsLayout'); ?>
+        </div>
+        <?php $this->load->view('layout/JsLayout'); ?>
 
-</body>
+    </body>
 
 </html>
