@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>Mahasiswa - Admin</title>
+        <title>Mahasiswa - Admin</title>
 
-    <?php $this->load->view('layout/CssLayout'); ?>
+        <?php $this->load->view('layout/CssLayout'); ?>
 
-</head>
+    </head>
 
-<body>
-            <?php $this->load->view('layout/HeaderLayout.php'); ?>
+    <body>
 
-            <?php $this->load->view('layout/NavigationLayout'); ?>
+        <?php $this->load->view('layout/NavigationLayout'); ?>
 
 
         <div id="page-wrapper">
             <div class="row">
-            <p></p>
+                <p></p>
                 <ol class="breadcrumb">
                     <li><a href="<?php echo base_url(); ?>index.php/admin/">Home</a></li>
                     <li>Data Mahasiswa</li>
@@ -45,18 +44,18 @@
 
                     <p></p>
 
-                    <table id="dataUser" class="table table-hover table-bordered">
+                    <table id="dataMahasiswa" class="table table-hover table-bordered">
                         <thead>
                             <tr>
                                 <th class="text-center">NPM</th>
                                 <th class="text-center">Nama</th>
-                                <th class="text-center">Jenis Kelamin</th>                                
+                                <th class="text-center">Jenis Kelamin</th>
                                 <th class="text-center">Kelas</th>
                                 <th class="text-center">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($mahasiswa as $m) {?>
+                            <?php foreach ($mahasiswa as $m) { ?>
                                 <tr>
                                     <td><?php echo $m->npm; ?></td>
                                     <td><?php echo $m->nama; ?></td>
@@ -75,15 +74,19 @@
                                         </a>
                                     </td>
                                 </tr>
-                            <?php }?>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
 
-    <?php $this->load->view('layout/JsLayout'); ?>
-
-</body>
+        <?php $this->load->view('layout/JsLayout'); ?>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#dataMahasiswa').DataTable();
+            });
+        </script>
+    </body>
 
 </html>
